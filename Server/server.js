@@ -1,3 +1,5 @@
+
+
 var express=require('express');
 var bodyParser = require('body-parser');
 
@@ -21,7 +23,7 @@ app.post('/todos',(req,res)=>{
     res.status(400).send(e);
   });
 });
-
+module.exports={app};
 app.listen(3000,()=>{
   console.log('Started on port 3000');
 });
